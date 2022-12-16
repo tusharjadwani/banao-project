@@ -16,7 +16,7 @@ try {
     app.use(express.json())
 
     app.get('/', (req, res) => {
-        res.status(404).send("Forbidden");
+        res.status(404).send("Backend");
     })
     
     app.use('/api/auth', require('./routes/auth'));
